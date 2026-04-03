@@ -8,11 +8,11 @@
 
 **data.zip** - source data (you need to unzip on your disk to get the data.csv file), sales 2010-2013
 
-**PowerBI Training UTB 2026_04 (complete version - data transformation + model + visuals).pbix** - finished report as it should look like at the end of the training
+**PowerBI Training 2026_04 (complete version - data transformation + model + visuals).pbix** - finished report as it should look like at the end of the training
 
-**PowerBI Training UTB 2026_04 (partial version - data transformation + model).pbix** - training in-progress partially finished report. Intention is for practicing only the visualizations (data transformation + modeling is done).
+**PowerBI Training 2026_04 (partial version - data transformation + model).pbix** - training in-progress partially finished report. Intention is for practicing only the visualizations (data transformation + modeling is done).
 
-**PowerBI Training UTB 2026_04 (partial version - data transformation).pbix** - training in-progress partially finished report. Intention is for practicing model building + visualizations (data transformation is done).
+**PowerBI Training  2026_04 (partial version - data transformation).pbix** - training in-progress partially finished report. Intention is for practicing model building + visualizations (data transformation is done).
 
 **PowerBI Training UTB 2026_03 guideline screenshots for print.docx** - screenshots of the finished report, to be used as a guideline for this excercise
 
