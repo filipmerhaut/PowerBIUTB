@@ -1,24 +1,22 @@
-Go to the “Model” screen of PowerBI Desktop and create the following Measures:
+*****Go to the “Model” screen of PowerBI Desktop and create the following Measures:*****
 
-In table Discounts:
+*****In table Discounts:*****
 Discount % = SUM(Discounts[Discount Amount])/SUM(Sales[Sales Amount])
 
--- DiscountPercentage = CALCULATE(SUM(Discounts[Discount Amount])/SUM(Sales[Sales Amount]))
 
+*****In table Resellers:*****
+Selected Reseller = var selectedreseller = SELECTEDVALUE('Resellers'[Reseller]) return "Reseller: "& IF(ISBLANK(selectedreseller), "All Resellers", selectedreseller )
 
-In table Resellers:
-Selected Reseller = var selectedreseller = SELECTEDVALUE('Resellers'[Reseller Name]) return "Reseller: "& IF(ISBLANK(selectedreseller); "All Resellers"; selectedreseller )
-
-In table Sales:
+*****In table Sales:*****
 Order Sales Amount = SUM(Sales[Sales Amount])
 
 Shipped Sales Amount = CALCULATE(SUM(Sales[Sales Amount]), USERELATIONSHIP(Sales[Ship Date],'Calendar'[Date]))
 
 Records = COUNTROWS(Sales)
 
-Month to Month % = [Order Sales Amount]/[Order Sales Amount LM]
-
 Order Sales Amount LM = CALCULATE([Order Sales Amount], PREVIOUSMONTH('Calendar'[Date]))
+
+Month to Month % = [Order Sales Amount]/[Order Sales Amount LM]
 
 Order Sales Amount SPLY = CALCULATE([Order Sales Amount], SAMEPERIODLASTYEAR('Calendar'[Date]))
 
